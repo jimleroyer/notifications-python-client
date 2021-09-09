@@ -71,6 +71,7 @@ class BaseAPIClient(object):
 
         kwargs = {
             "headers": self.generate_headers(api_token),
+            "timeout": 30,
         }
 
         if data is not None:
